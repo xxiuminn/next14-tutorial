@@ -1,7 +1,8 @@
 import Image from "next/image";
 import styles from "./about.module.css";
 
-const AboutPage = () => {
+const AboutPage = ({ params, searchParams }) => {
+  console.log(searchParams);
   return (
     <div>
       <div className={styles.container}>
